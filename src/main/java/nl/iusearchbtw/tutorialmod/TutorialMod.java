@@ -2,6 +2,7 @@ package nl.iusearchbtw.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import nl.iusearchbtw.tutorialmod.block.ModBlocks;
 import nl.iusearchbtw.tutorialmod.item.ModItemGroups;
 import nl.iusearchbtw.tutorialmod.item.ModItems;
@@ -18,5 +19,7 @@ public class TutorialMod implements ModInitializer {
 
     ModItems.registerModItems();
     ModBlocks.registerModBlocks();
+
+    FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
   }
 }
