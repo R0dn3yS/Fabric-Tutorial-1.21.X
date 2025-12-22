@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "Tutorial Mod by R0dn3yS",
+	"authors": [
+		"R0dn3yS"
+	],
+	"contact": {
+		"homepage": "https://iusearchbtw.nl",
+		"sources": "https://github.com/R0dn3yS/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tutorialmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"nl.iusearchbtw.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+          "nl.iusearchbtw.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+			"nl.iusearchbtw.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.3",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
