@@ -3,6 +3,7 @@ package nl.iusearchbtw.tutorialmod;
 import net.fabricmc.api.ModInitializer;
 
 import nl.iusearchbtw.tutorialmod.block.ModBlocks;
+import nl.iusearchbtw.tutorialmod.item.ModItemGroups;
 import nl.iusearchbtw.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +14,8 @@ public class TutorialMod implements ModInitializer {
 
   @Override
   public void onInitialize() {
+    ModItemGroups.registerItemGroups();
+
     ModItems.registerModItems();
     ModBlocks.registerModBlocks();
   }
