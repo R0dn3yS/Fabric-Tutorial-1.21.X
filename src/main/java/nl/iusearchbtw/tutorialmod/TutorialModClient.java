@@ -3,8 +3,8 @@ package nl.iusearchbtw.tutorialmod;
 import net.fabricmc.api.ClientModInitializer;
 
 public class TutorialModClient implements ClientModInitializer {
-    @Override
-    public void onInitializeClient() {
+  @Override
+  public void onInitializeClient() {
 
-    }
+  }
 }
