@@ -22,7 +22,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
       .add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE)
       .add(ModBlocks.MAGIC_BLOCK);
 
-    getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-      .add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
+    getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL).add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
+
+    getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.PINK_GARNET_FENCE);
+    getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.PINK_GARNET_FENCE_GATE);
+    getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.PINK_GARNET_WALL);
   }
 }
