@@ -2,11 +2,13 @@ package nl.iusearchbtw.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import nl.iusearchbtw.tutorialmod.block.ModBlocks;
 import nl.iusearchbtw.tutorialmod.component.ModDataComponentTypes;
 import nl.iusearchbtw.tutorialmod.item.ModItemGroups;
 import nl.iusearchbtw.tutorialmod.item.ModItems;
+import nl.iusearchbtw.tutorialmod.util.HammerUsageEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,5 +26,7 @@ public class TutorialMod implements ModInitializer {
     ModDataComponentTypes.registerDataComponentTypes();
 
     FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
+
+    PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
   }
 }
