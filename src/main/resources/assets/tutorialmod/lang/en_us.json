@@ -13,6 +13,15 @@
 
   "item.tutorialmod.pink_garnet_hammer": "Pink Garnet Hammer",
 
+  "item.tutorialmod.pink_garnet_helmet": "Pink Garnet Helmet",
+  "item.tutorialmod.pink_garnet_chestplate": "Pink Garnet Chestplate",
+  "item.tutorialmod.pink_garnet_leggings": "Pink Garnet Leggings",
+  "item.tutorialmod.pink_garnet_boots": "Pink Garnet Boots",
+
+  "item.tutorialmod.necron_chestplate": "§dAncient Necron's Chestplate §6✪✪✪✪✪",
+  "item.tutorialmod.necron_leggings": "§dAncient Necron's Leggings §6✪✪✪✪✪",
+  "item.tutorialmod.necron_boots": "§dAncient Necron's Boots §6✪✪✪✪✪",
+
 
   "block.tutorialmod.pink_garnet_block": "Block of Pink Garnet",
   "block.tutorialmod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
